@@ -1,0 +1,13 @@
+server:
+    port: 8089
+
+api:
+    finnhub:
+        token: ck4fjshr01qus81pv3ogck4fjshr01qus81pv3p0
+        domain: finnhub.io
+        base-url: api/v1
+        endpoints:
+            stock:
+                profile2: /stock/profile2
+                quote: /quote
+                symbol: /stock/symbol
