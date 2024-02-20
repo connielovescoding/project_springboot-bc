@@ -9,12 +9,12 @@ import com.javabootcamp.demofinnhub.model.dto.finnhub.SymbolDTO;
 
 public interface DataOperation {
     
-    @GetMapping(value = "/profile/{symbol}")
-    CompanyProfile2DTO getCompanyProfile(@PathVariable String symbol);
+    // @GetMapping(value = "/profile/{symbol}")
+    // CompanyProfile2DTO getCompanyProfile(@PathVariable String symbol);
 
-    @GetMapping(value = "quote/{symbol}")
-    QuoteDTO getQuote(@PathVariable String symbol);
+    // @GetMapping(value = "quote/{symbol}")
+    // QuoteDTO getQuote(@PathVariable String symbol);
 
-    @GetMapping(value = "symbols")
-    List<SymbolDTO> getAllSymbols();
+    // @GetMapping(value = "symbols")
+    // List<SymbolDTO> getAllSymbols();
 }

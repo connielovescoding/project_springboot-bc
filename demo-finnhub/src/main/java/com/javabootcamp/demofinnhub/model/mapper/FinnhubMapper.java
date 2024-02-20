@@ -32,6 +32,7 @@ public class FinnhubMapper {
     public Stock map(CompanyProfile2DTO profile) {
         return Stock.builder() //
             .country(profile.getCountry()) //
+            .companyName(profile.getCompanyName()) //
             .ipoDate(profile.getIpoDate()) //
             .logo(profile.getLogo()) //
             .marketCap(profile.getMarketCap()) //

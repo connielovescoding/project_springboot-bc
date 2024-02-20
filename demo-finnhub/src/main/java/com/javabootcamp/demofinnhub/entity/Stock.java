@@ -10,15 +10,21 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Table(name = "finnhub_stock")
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 @Builder
+@ToString
 public class Stock implements Serializable {
 
     @Id
@@ -41,7 +47,7 @@ public class Stock implements Serializable {
     private String currency;
 
     @Column(name = "status", columnDefinition = "VARCHAR(1)") // 'A', 'I'
-    private Character stockStatus;
+    private String stockStatus;
     
     @OneToOne
     @JoinColumn(name = "symbol_id", nullable = false)
